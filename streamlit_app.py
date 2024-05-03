@@ -25,14 +25,14 @@ def generate_chat_completion(system_message, user_message):
     return chat_completion.choices[0].message.content
 
 # Streamlit app layout
-st.title("AMJ's Chat Bot ")
+st.title("MindfulAI")
 
 # Input fields for system and user messages
-system_message = st.text_input("System Message:")
+system_message = st.text_input("Define Role:")
 user_message = st.text_input("User Message:")
 
 # Submit button to generate chat completion
-if st.button("Generate Response"):
+if st.button("Run"):
     # Check if both inputs are not empty
     if system_message and user_message:
         # Generate chat completion and display it
