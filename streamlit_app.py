@@ -29,7 +29,7 @@ st.title("MindfulAI")
 
 # Input fields for system and user messages
 system_message = st.text_input("Define Role:")
-user_message = st.text_input("User Message:")
+user_message = st.text_input(" Message:")
 
 # Submit button to generate chat completion
 if st.button("Run"):
